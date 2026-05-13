@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero {
+    background: #3a5b22;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 90%;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #fff;
+    color: #2193b0;
+}
+
+.login-btn:hover {
+    background: #e0f7ff;
+}
+
+.register-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.register-btn:hover {
+    background: #fff;
+    color: #2193b0;
+}
+
+.auth_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_container,
+.register_container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-overlay,
+.register-form-overlay {
+    width: 400px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.login-form-overlay button,
+.register-form-overlay button {
+    background-color: #3A5B22;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.login-form-overlay input,
+.register-form-overlay input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 32px;
+}
+
+.login-form-overlay label,
+.register-form-overlay label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.login_container h1,
+.register_container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.auth_div img {
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+}
+
+.Dashboard {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.dashboard-card {
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-imageWrapper {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.dashboard-image {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-card:hover .dashboard-image {
+    transform: scale(1.15);
+}
+
+.dashboard-card-content {
+    padding: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-card:hover .dashboard-card-content {
+    background-color: #f5f5f5;
+}
+
+.dashboard-card-content h3 {
+    margin: 0 0 8px;
+}
+
+.dashboard-card-content p {
+    margin: 0;
+    color: #555;
+}
+
+.loginForm div,
+.registerForm div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.login-form-overlay a,
+.register-form-overlay a {
+    font-size: 12px;
+    color: blue;
+    text-decoration: none;
+}
+
+.redirectToRegisterDiv,
+.redirectToLoginPage {
+    height: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerForm {
+    margin-top: 40px;
+}
