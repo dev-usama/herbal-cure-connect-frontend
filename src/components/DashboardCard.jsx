@@ -1,4 +1,4 @@
-function DashboardCard({ imageSrc, title, description }) {
+function DashboardCard({ imageSrc, title, description, url }) {
     return (
         <div className="dashboard-card">
             <div className="dashboard-imageWrapper">
@@ -12,6 +12,9 @@ function DashboardCard({ imageSrc, title, description }) {
             <div className="dashboard-card-content">
                 <h3>{title}</h3>
                 <p>{description}</p>
+                <button className="dashboard-button" onClick={() => window.location.href = url}>
+                    Connect Now
+                </button>
             </div>
         </div>
     );

@@ -18,7 +18,7 @@ export default function Login() {
     const authUser = async (e) => {
         e.preventDefault();
         try {
-            const apiUrl = import.meta.env.VITE_API_URL;
+            const apiUrl = import.meta.env.VITE_BACKEND_URL;
             const response = await fetch(apiUrl + '/users/login', {
                 method: 'POST',
                 credentials: 'include',

@@ -20,7 +20,7 @@ function Register() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const apiUrl = import.meta.env.VITE_API_URL;
+        const apiUrl = import.meta.env.VITE_BACKEND_URL;
         await fetch(apiUrl + '/users/register', {
             method: "POST",
             credentials: 'include',
