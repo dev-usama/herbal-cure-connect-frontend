@@ -31,7 +31,11 @@ function Meeting() {
         const startMeeting = async () => {
             // 1. Get local media stream first
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                let devices = await navigator.mediaDevices.enumerateDevices();
+                let isCameraFound = devices.some(device => device.kind === 'videoinput');
+                let isMicrophoneFound = devices.some(device => device.kind === 'audioinput');
+
+                const stream = await navigator.mediaDevices.getUserMedia({ video: isCameraFound, audio: isMicrophoneFound });
                 localStreamRef.current = stream;
                 if (localVideoRef.current) {
                     localVideoRef.current.srcObject = stream;

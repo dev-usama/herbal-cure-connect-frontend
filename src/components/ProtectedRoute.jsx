@@ -7,7 +7,8 @@ const ProtectedRoute = () => {
 
     if (loading) {
         return (
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex flex-col justify-center items-center h-screen text-green-600">
+                <h5>Don't refresh the page</h5>
                 <div
                     className="w-16 h-16 border-4 border-green-600 border-t-transparent rounded-full animate-spin"></div>
             </div>
