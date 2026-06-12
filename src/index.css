@@ -72,15 +72,10 @@ body {
 
 .auth_div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100vh;
 }
 
-.login_container,
-.register_container {
-    width: 50%;
-    height: 100vh;
+.auth_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,8 +113,7 @@ body {
     color: #000000;
 }
 
-.login_container h1,
-.register_container h1 {
+.auth_container h1 {
     font-size: 32px;
     font-weight: bold;
     color: #000000;
@@ -127,8 +121,6 @@ body {
 
 .auth_div img {
     object-fit: cover;
-    height: 100%;
-    width: 50%;
 }
 
 .Dashboard {

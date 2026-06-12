@@ -37,8 +37,8 @@ export default function Login() {
         }
     };
     return (
-        <div className='auth_div'>
-            <div className="login_container">
+        <div className='auth_div h-screen max-sm:flex-col-reverse max-sm:justify-end sm:flex-row'>
+            <div className="auth_container w-[70%] md:w-1/2">
                 <div className="login-form-overlay">
                     <h1>Welcome to Herbal Cure!</h1>
                     <p>Enter your Credentials to access your account</p>
@@ -55,7 +55,7 @@ export default function Login() {
                     <div className='redirectToRegisterDiv'>Don&apos;t have an account? <Link to="/register">&nbsp;Sign Up</Link></div>
                 </div>
             </div>
-            <img src='https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8MXwwfHx8Mg%3D%3D' width={500} height={500} alt="leaves" />
+            <img className="max-sm:h-24 w-full md:w-1/2" src='https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8MXwwfHx8Mg%3D%3D' width={500} height={500} alt="leaves" />
         </div>
     );
 }

@@ -38,8 +38,8 @@ function Register() {
         });
     };
     return (
-        <div className='auth_div'>
-            <div className='register_container'>
+        <div className='auth_div h-screen max-sm:flex-col-reverse max-sm:justify-end sm:flex-row'>
+            <div className='auth_container w-[70%] md:w-1/2'>
                 <div className="register-form-overlay">
                     <h1>Get Started Now</h1>
                     <form className='registerForm' onSubmit={handleSubmit}>
@@ -70,10 +70,10 @@ function Register() {
                         <input name="password" value={formData.password} onChange={handleFormChange} type="password" placeholder="Enter your password" /><br />
                         <button type="submit">Signup</button>
                     </form>
-                    <div className='redirectToLoginPage'>Have an account? <Link href="/">&nbsp;Sign In</Link></div>
+                    <div className='redirectToLoginPage'>Have an account? <Link to="/login">&nbsp;Sign In</Link></div>
                 </div>
             </div>
-            <img src='https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8MXwwfHx8Mg%3D%3D' width={500} height={500} alt="leaves" />
+            <img className="max-sm:h-24 w-full md:w-1/2" src='https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8MXwwfHx8Mg%3D%3D' width={500} height={500} alt="leaves" />
         </div>
     );
 }
